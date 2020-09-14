@@ -11,7 +11,7 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 
-private val mSharedPrefFile = "com.example.android.appwidgetsample"
+private val mSharedPrefFile = "tw.nolions.widget"
 private val COUNT_KEY = "count"
 
 /**
@@ -30,7 +30,6 @@ class ThirdAppWidget : AppWidgetProvider() {
         }
     }
 }
-
 
 internal fun updateThirdAppWidget(
     context: Context,
