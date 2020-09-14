@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#09C"
+    android:padding="@dimen/widget_margin">
+
+    <LinearLayout
+        android:id="@+id/section_id3"
+        style="@style/AppWidgetSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/appwidget_id_label3"
+            style="@style/AppWidgetLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/widget_id" />
+
+        <TextView
+            android:id="@+id/appwidget_id3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/AppWidgetText"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/section_update3"
+        style="@style/AppWidgetSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal"
+        android:layout_below="@+id/section_id3">
+
+        <TextView
+            android:id="@+id/appwidget_update_label3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:text="@string/last_update"
+            style="@style/AppWidgetLabel"/>
+
+        <TextView
+            android:id="@+id/appwidget_update3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginBottom="2dp"
+            style="@style/AppWidgetText"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/section_update3"
+        android:layout_centerHorizontal="true"
+        style="@style/AppWidgetButton"
+        android:text="@string/update"/>
+    
+</RelativeLayout>
