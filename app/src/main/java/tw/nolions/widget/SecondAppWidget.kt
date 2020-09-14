@@ -29,7 +29,7 @@ internal fun updateSecondAppWidget(
 ) {
     // Construct the RemoteViews object
     val views = RemoteViews(context.packageName, R.layout.second_app_widget)
-    views.setTextViewText(R.id.appwidget_text, "$appWidgetId")
+    views.setTextViewText(R.id.appwidget_id2, "$appWidgetId")
 
     // Instruct the widget manager to update the widget
     appWidgetManager.updateAppWidget(appWidgetId, views)
